@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Agni Samāj - विद्यया अमृतमश्नुते</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html">Agni Samāj</a>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html#courses">Courses</a></li>
+                <li><a href="index.html#pricing">Pricing</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Page Header Section -->
+        <section class="page-header">
+            <div class="page-header-content">
+                <h1>About Agni Samāj</h1>
+                <p>Our mission to make learning accessible and meaningful for all.</p>
+            </div>
+        </section>
+
+        <!-- Vision Section -->
+        <section class="vision-section">
+            <div class="vision-content">
+                <h2>विद्यया अमृतम् अश्नुते</h2>
+                <p class="subtitle">Through Knowledge, One Attains Immortality</p>
+                <p>At Agni Samāj, we are dedicated to empowering individuals through quality education. We believe in the transformative power of learning and aim to rekindle intellectual curiosity and cultural understanding. Our platform fosters a community rooted in knowledge, respect, and self-growth, making ancient wisdom accessible to a modern audience.</p>
+            </div>
+        </section>
+
+        <!-- Why Choose Us Section -->
+        <section class="why-choose-us">
+            <h2>Why Choose Agni Samāj?</h2>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <img src="images/diverse-icon.png" alt="Accessible Education Icon" class="feature-icon">
+                    <h3>Education for All</h3>
+                    <p>Our courses are designed for diverse backgrounds, ensuring everyone can find value, regardless of prior experience.</p>
+                </div>
+                <div class="feature-item">
+                    <img src="images/value-icon.png" alt="Pay What You Choose Icon" class="feature-icon">
+                    <h3>Pay What You Choose</h3>
+                    <p>Our unique model allows you to contribute based on your means and the value you derive from our courses.</p>
+                </div>
+                <div class="feature-item">
+                    <img src="images/community-icon.png" alt="Community Icon" class="feature-icon">
+                    <h3>A Growing Community</h3>
+                    <p>Learning is enriched when shared. We promote a community where learners can connect and grow together.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action Section -->
+        <section class="cta-section">
+            <div class="cta-content">
+                <h2>Begin Your Journey</h2>
+                <p>Take the next step in your educational path. Explore our courses and deepen your understanding today.</p>
+                <a href="index.html#courses" class="cta-button">Explore Courses</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h3>Agni Samāj</h3>
+            </div>
+            <div class="footer-links">
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <a href="#"><img src="images/social-x.png" alt="Social Media"></a>
+                <a href="#"><img src="images/social-youtube.png" alt="Social Media"></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Agni Samāj. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- This script makes the mobile menu work -->
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+
+</body>
+</html>

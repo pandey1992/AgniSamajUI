@@ -362,3 +362,123 @@ footer {
         margin: 0 10px;
     }
 }
+
+/* =================================== */
+/*        ABOUT US PAGE STYLES         */
+/* =================================== */
+
+/* Page Header */
+.page-header {
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    text-align: center;
+    padding: 140px 5% 60px;
+}
+
+.page-header h1 {
+    font-family: var(--heading-font);
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Vision Section */
+.vision-section {
+    padding: 80px 5%;
+    text-align: center;
+    background-color: var(--secondary-color);
+}
+
+.vision-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.vision-content h2 {
+    font-family: var(--heading-font);
+    font-size: 2.5rem;
+    color: var(--primary-color);
+}
+
+.vision-content .subtitle {
+    font-size: 1.2rem;
+    color: var(--accent-color);
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+.vision-content p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+/* Why Choose Us Section */
+.why-choose-us {
+    padding: 80px 5%;
+    background-color: var(--light-gray);
+    text-align: center;
+}
+
+.why-choose-us h2 {
+    font-family: var(--heading-font);
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 50px;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.feature-item {
+    padding: 30px;
+}
+
+.feature-icon {
+    width: 70px;
+    margin-bottom: 20px;
+}
+
+.feature-item h3 {
+    font-family: var(--heading-font);
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+/* Call to Action Section */
+.cta-section {
+    padding: 80px 5%;
+    text-align: center;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.cta-content h2 {
+    font-family: var(--heading-font);
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.cta-content p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Add mobile responsive styles for new sections */
+@media (max-width: 768px) {
+    .page-header h1 {
+        font-size: 2.2rem;
+    }
+    .vision-content h2,
+    .why-choose-us h2,
+    .cta-content h2 {
+        font-size: 2rem;
+    }
+}
