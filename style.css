@@ -14,6 +14,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: var(--body-font);
     color: var(--text-color);
@@ -72,10 +76,10 @@ ul {
     justify-content: center;
     align-items: center;
     text-align: center;
-    height: 100vh;
+    min-height: 100vh;
     color: var(--secondary-color);
     background: linear-gradient(rgba(26, 35, 126, 0.8), rgba(26, 35, 126, 0.8)), url('images/hero-bg.jpg') no-repeat center center/cover;
-    padding: 0 5%;
+    padding: 100px 5% 0;
 }
 
 .hero-content h1 {
@@ -219,7 +223,7 @@ footer {
     max-width: 1200px;
     margin: 0 auto;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 30px;
 }
 
 .footer-logo h3 {
@@ -254,4 +258,61 @@ footer {
     padding: 20px 5%;
     margin-top: 30px;
     border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* =================================== */
+/*      MOBILE OPTIMIZATION (768px)    */
+/* =================================== */
+@media (max-width: 768px) {
+    
+    /* Adjust navigation for mobile */
+    .nav-links {
+        /* This is a simple fix. For a full hamburger menu, JavaScript would be needed. */
+        display: none; 
+    }
+
+    /* Adjust typography for smaller screens */
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+    
+    .courses-section h2,
+    .pricing-content h2 {
+        font-size: 2rem;
+    }
+
+    /* Stack course cards vertically */
+    .course-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+        max-width: 350px;
+    }
+    
+    /* Adjust footer layout */
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 25px;
+    }
+    
+    .footer-links ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .footer-social {
+        margin-top: 10px;
+    }
+
+    .footer-social a {
+        margin: 0 10px;
+    }
 }
