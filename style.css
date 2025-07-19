@@ -70,13 +70,13 @@ ul {
     color: var(--accent-color);
 }
 
-/* Hamburger Menu Icon */
+/* === CORRECTED HAMBURGER ICON STYLES === */
 .hamburger {
-    display: none; /* Hidden by default on desktop */
+    display: none; /* Hidden on desktop */
     flex-direction: column;
-    justify-content: space-around;
-    width: 2rem;
-    height: 1.5rem;
+    justify-content: space-between; /* This creates the space between the bars */
+    width: 25px; /* Fixed width */
+    height: 20px; /* Fixed height for the container */
     background: transparent;
     border: none;
     cursor: pointer;
@@ -85,14 +85,14 @@ ul {
 }
 
 .hamburger .bar {
-    width: 2rem;
-    height: 0.25rem;
+    display: block; /* Ensures the span behaves like a block */
+    width: 25px; /* Match the container's width */
+    height: 3px;  /* The thickness of each bar */
     background-color: var(--primary-color);
-    border-radius: 10px;
-    transition: all 0.3s linear;
-    position: relative;
-    transform-origin: 1px;
+    border-radius: 2px;
 }
+/* === END OF CORRECTIONS === */
+
 
 /* Hero Section */
 .hero {
@@ -112,8 +112,6 @@ ul {
     font-weight: 700;
     margin-bottom: 1rem;
 }
-
-/* Other styles remain the same... */
 
 .hero-content p {
     font-size: 1.2rem;
