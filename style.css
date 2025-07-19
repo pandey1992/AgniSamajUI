@@ -70,6 +70,30 @@ ul {
     color: var(--accent-color);
 }
 
+/* Hamburger Menu Icon */
+.hamburger {
+    display: none; /* Hidden by default on desktop */
+    flex-direction: column;
+    justify-content: space-around;
+    width: 2rem;
+    height: 1.5rem;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 10;
+}
+
+.hamburger .bar {
+    width: 2rem;
+    height: 0.25rem;
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    transition: all 0.3s linear;
+    position: relative;
+    transform-origin: 1px;
+}
+
 /* Hero Section */
 .hero {
     display: flex;
@@ -88,6 +112,8 @@ ul {
     font-weight: 700;
     margin-bottom: 1rem;
 }
+
+/* Other styles remain the same... */
 
 .hero-content p {
     font-size: 1.2rem;
@@ -110,7 +136,6 @@ ul {
     background-color: #ffca28;
 }
 
-/* Courses Section */
 .courses-section {
     padding: 80px 5%;
     text-align: center;
@@ -177,7 +202,6 @@ ul {
     color: var(--secondary-color);
 }
 
-/* Pricing Section */
 .pricing-section {
     padding: 80px 5%;
     text-align: center;
@@ -208,7 +232,6 @@ ul {
     margin-bottom: 30px;
 }
 
-/* Footer */
 footer {
     background-color: #121a5a;
     color: var(--secondary-color);
@@ -264,11 +287,36 @@ footer {
 /*      MOBILE OPTIMIZATION (768px)    */
 /* =================================== */
 @media (max-width: 768px) {
-    
-    /* Adjust navigation for mobile */
+    /* Show the hamburger menu and hide the regular links */
+    .hamburger {
+        display: flex;
+    }
+
     .nav-links {
-        /* This is a simple fix. For a full hamburger menu, JavaScript would be needed. */
-        display: none; 
+        display: none; /* Hide the links by default */
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: var(--secondary-color);
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    
+    /* This class is added by JavaScript to show the menu */
+    .nav-links.active {
+        display: flex; 
+    }
+
+    .nav-links li {
+        text-align: center;
+        padding: 1rem 0;
+        border-top: 1px solid var(--light-gray);
+    }
+    
+    .nav-links a {
+        width: 100%;
+        display: block;
     }
 
     /* Adjust typography for smaller screens */

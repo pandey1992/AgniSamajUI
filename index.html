@@ -14,12 +14,19 @@
             <div class="logo">
                 <a href="#">Agni Samāj</a>
             </div>
-            <ul class="nav-links">
+            <!-- The navigation links now have an ID -->
+            <ul class="nav-links" id="nav-links">
                 <li><a href="#courses">Courses</a></li>
                 <li><a href="#pricing">Pricing</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#">Contact Us</a></li>
             </ul>
+            <!-- This is the new hamburger menu button -->
+            <button class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
         </nav>
     </header>
 
@@ -62,10 +69,10 @@
                 <a href="#" class="cta-button">Learn About Our Model</a>
             </div>
         </section>
-
     </main>
 
     <footer>
+        <!-- Footer content remains the same -->
         <div class="footer-content">
             <div class="footer-logo">
                 <h3>Agni Samāj</h3>
@@ -86,6 +93,16 @@
             <p>&copy; 2025 Agni Samāj. All Rights Reserved.</p>
         </div>
     </footer>
+
+    <!-- This is the new JavaScript to make the menu work -->
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
 
 </body>
 </html>
